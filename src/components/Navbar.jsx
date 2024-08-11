@@ -93,7 +93,7 @@ const Navbar = () => {
           />
           <div>
             <h4 className=" font-outfit">Newsiya Hotel</h4>
-            <p className="hidden md:inline">โรงเเรมนิว สิยะ</p>
+            <p className="hidden md:inline">โรงแรมนิวศิญา</p>
           </div>
         </a>
         <MobileNavbar navContents={navContents} />
