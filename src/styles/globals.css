@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +10,8 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {maehongson
-  :root {
+@media (prefers-color-scheme: dark) {
+  maehongson :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
@@ -34,33 +34,38 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #333B44;
+  background: #333b44;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-  
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   contain: paint;
 }
 
 body {
   @apply bg-primary;
 }
+
+p {
+  @apply sm:text-xl;
+}
+
 h1 {
   @apply text-title-clamp font-semibold leading-[1] tracking-wide;
 }
 
 section {
-  @apply py-10 lg:py-20
+  @apply py-10 lg:py-20;
 }
 
 .example {
@@ -99,7 +104,7 @@ section {
 }
 
 .link_button {
-  @apply inline-block font-outfit bg-accent-darken text-white rounded-full px-3 py-1 hover:bg-transparent  hover:backdrop-blur-md hover:text-accent-darken transition-all duration-100 active:translate-y-2 hover:scale-110 hover:border-accent-darken hover:border-2 ;
+  @apply inline-block font-outfit bg-accent-darken text-white rounded-full px-3 py-1 hover:bg-transparent  hover:backdrop-blur-md hover:text-accent-darken transition-all duration-100 active:translate-y-2 hover:scale-110 hover:border-accent-darken hover:border-2;
 }
 
 .link_button--transparent {
@@ -115,11 +120,11 @@ section {
 }
 
 .room_image {
-  @apply col-span-full md:col-span-2 w-full rounded-[50px] relative ;
+  @apply col-span-full md:col-span-2 w-full rounded-[50px] relative;
 }
 
 .header-3 {
-  @apply text-3xl font-semibold text-accent-darken
+  @apply text-3xl font-semibold text-accent-darken;
 }
 
 .room_price {
@@ -135,9 +140,9 @@ section {
 }
 
 .room_info_container {
-  @apply flex flex-col items-start justify-center col-span-full md:col-span-1
+  @apply flex flex-col items-start justify-center col-span-full md:col-span-1;
 }
 
 .circular_icon_button {
-  @apply w-[4rem] h-[4rem] stroke-accent-darken bg-white rounded-full p-4 shadow-lg hover:scale-125 transition-all duration-300 hover:brightness-75 active:scale-75
+  @apply w-[4rem] h-[4rem] stroke-accent-darken bg-white rounded-full p-4 shadow-lg hover:scale-125 transition-all duration-300 hover:brightness-75 active:scale-75;
 }

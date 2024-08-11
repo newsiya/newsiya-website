@@ -32,19 +32,19 @@ const Navbar = () => {
         },
       ],
     },
-    {
-      linksTitle: "ธุระกิจในเครือ",
-      links: [
-        {
-          link: "Item 1",
-          href: "/",
-        },
-        {
-          link: "Item 2",
-          href: "/",
-        },
-      ],
-    },
+    // {
+    //   linksTitle: "ธุระกิจในเครือ",
+    //   links: [
+    //     {
+    //       link: "Item 1",
+    //       href: "/",
+    //     },
+    //     {
+    //       link: "Item 2",
+    //       href: "/",
+    //     },
+    //   ],
+    // },
     {
       link: "สถานที่ท่องเที่ยว",
       href: "/travel",
