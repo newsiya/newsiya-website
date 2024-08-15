@@ -20,11 +20,18 @@ const maehongson = localFont({
 });
 
 export const metadata = {
-  title: "นิวศิญา | โรงแรมใจกลางเมืองมหาสารคาม",
-  description:
-    'โรงแรม "นิวศิญา" ให้บริการห้องพักหรูหราพร้อมสิ่งอำนวยความสะดวกครบครัน ตั้งอยู่ใจตัวเมืองมหาสารคามสะดวกต่อการเดินทาง',
+  title: "โรงแรมนิวศิญา",
+  description: "โรงแรมนิวศิญา ตั้งอยู่ใจตัวเมืองมหาสารคามสะดวกต่อการเดินทาง",
+  keywords: [
+    "โรงแรมนิวศิญา",
+    "โรงแรมมหาสารคาม",
+    "ที่พักมหาสารคาม",
+    "นิวศิญา",
+    "มหาสารคาม",
+    "โรงแรม",
+  ],
   openGraph: {
-    title: "นิวศิญา | โรงแรมใจกลางตัวเมืองมหาสารคาม",
+    title: "โรงแรมนิวศิญา",
     description:
       'เพลิดเพลินกับการพักผ่อนที่โรงแรม "นิวศิญา" ซึ่งมีทั้งความสะดวกสบายและบรรยากาศที่เป็นกันเอง',
     url: "https://newsiya.com/",
@@ -39,9 +46,37 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "นิวศิญา | โรงแรมใจกลางตัวเมืองมหาสารคาม",
-    description: 'พักผ่อนอย่างมีระดับที่โรงแรม "นิวศิญา"',
+    title: "โรงแรมนิวศิญา",
+    description: "พักผ่อนอย่างมีระดับที่โรงแรมนิวศิญา",
     images: ["https://newsiya.com/hero-img.png"],
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      // add favicon-32x32.png, favicon-96x96.png, android-chrome-192x192.png
+    ],
+    shortcut: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "128x128",
+        type: "image/png",
+      },
+      // add apple-icon-72x72.png, apple-icon-76x76.png, apple-icon-114x114.png, apple-icon-120x120.png, apple-icon-144x144.png, apple-icon-152x152.png, apple-icon-180x180.png
+    ],
   },
 };
 
@@ -49,7 +84,34 @@ export const revalidate = 3600;
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="th">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#333b44"
+        />
+        <meta name="msapplication-TileColor" content="#333b44" />
+        <meta name="theme-color" content="#333b44" />
+      </head>
       <body className={maehongson.className + " "}>
         <Navbar />
         {children}
