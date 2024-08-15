@@ -1,21 +1,22 @@
-import React from 'react'
+import React from "react";
 import ServicesCarousel from "../../components/ServicesCarousel";
-import { getContentServices } from '@/utils/contentful';
-import formatContentfulImages from '@/utils/formatContentfulImage';
+import { getContentServices } from "../../utils/contentful";
+import formatContentfulImages from "../../utils/formatContentfulImage";
 
 const page = async () => {
-    const {
-        serviceImages
-    } = await getContentServices()
+  const { serviceImages } = await getContentServices();
 
-    const formattedServiceImages = formatContentfulImages(serviceImages)
+  const formattedServiceImages = formatContentfulImages(serviceImages);
 
-    return (
-        <section id="services" className="bg-primary align-center justify-center flex flex-col items-center">
-            <h1 className="mb-5 heading">Services</h1>
-            <ServicesCarousel infos={formattedServiceImages}/>
-        </section>
-    )
-}
+  return (
+    <section
+      id="services"
+      className="bg-primary align-center justify-center flex flex-col items-center"
+    >
+      <h1 className="mb-5 heading">Services</h1>
+      <ServicesCarousel infos={formattedServiceImages} />
+    </section>
+  );
+};
 
-export default page
+export default page;
